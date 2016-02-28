@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardBackgroundColor="#b4b4f4"
+    card_view:cardCornerRadius="10dp"
+    card_view:cardPreventCornerOverlap="true"
+    card_view:cardUseCompatPadding="true"
+    card_view:contentPadding="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="name"
+            android:textSize="15dp"
+            android:textStyle="italic"
+
+            />
+
+        <TextView
+            android:id="@+id/item_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="account"
+            android:textSize="15dp"
+            android:textStyle="italic"
+            android:layout_below="@id/item_name"/>
+
+        <TextView
+            android:id="@+id/item_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="password"
+            android:textStyle="italic"
+            android:textSize="15dp"
+            android:layout_below="@id/item_account"/>
+
+        <TextView
+            android:id="@+id/item_remark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="remark"
+            android:textSize="15dp"
+            android:textStyle="italic"
+            android:layout_below="@id/item_password"/>
+
+        <ImageView
+            android:id="@+id/item_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src = "@drawable/abc_ic_menu_copy_mtrl_am_alpha"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        tools:context=".MainActivity"
+        xmlns:tools="http://schemas.android.com/tools">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:id="@+id/main_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#1543ec">
+            <ImageView
+            android:id="@+id/start_drawer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/abc_btn_rating_star_on_mtrl_alpha"
+            android:tint="#f91c1c"/>
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="小密钥盒子"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:textStyle="italic"
+            android:layout_weight="3"
+            android:textColor="#0a0909"/>
+            <ImageView android:id="@+id/main_search_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/abc_ic_search_api_mtrl_alpha"
+            android:layout_gravity="center"/>
+            <EditText
+            android:id="@+id/main_search_edittext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" android:hint="名字"
+                android:gravity="center"
+            />
+        </LinearLayout>
+
+        <ListView
+            android:layout_below="@id/main_title"
+            android:id="@+id/main_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></ListView>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/main_create"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/abc_ic_menu_selectall_mtrl_alpha"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+        
+        <LinearLayout
+            android:id="@+id/left_drawer"
+            android:layout_width="240dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/background1"
+            android:layout_gravity="start"
+            >
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/xd"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="小密钥盒子"
+                android:textSize="20dp"
+                android:textColor="#232222"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="更换密码"
+                android:textSize="20dp"
+                android:textColor="#232222"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="导入密钥"
+                android:textSize="20dp"
+                android:textColor="#232222"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="导出密钥"
+                android:textSize="20dp"
+                android:textColor="#232222"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textSize="20dp"
+                android:text="        更多"
+                android:textColor="#cd06d1"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="帮助"
+                android:textSize="20dp"
+                android:textColor="#232222"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="关于"
+                android:textSize="20dp"
+                android:textColor="#232222"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="开源协议"
+                android:textSize="20dp"
+                android:textColor="#232222"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+
+
+
+        </LinearLayout>
+</android.support.v4.widget.DrawerLayout>
+

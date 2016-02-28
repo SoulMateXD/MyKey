@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="#1c57f9">
+
+        <ImageButton
+            android:id="@+id/edit_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:src="@drawable/abc_ic_ab_back_mtrl_am_alpha"
+            android:background="#1c57f9"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="    编辑"
+            android:textSize="25dp"
+            android:layout_weight="7"
+            android:textStyle="italic"
+            android:textColor="#ffff"/>
+        <ImageView
+            android:id="@+id/edit_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/abc_btn_check_to_on_mtrl_015"
+            android:tint="#ffffff"/>
+
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edit_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="钥匙名称"
+        android:textStyle="italic"
+        android:textSize="30dp"
+        android:maxLines="1"/>
+
+    <EditText
+        android:id="@+id/edit_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="帐号"
+        android:textStyle="italic"
+        android:textSize="30dp"
+        android:maxLines="1"/>
+
+    <EditText
+        android:id="@+id/edit_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="密码"
+        android:textStyle="italic"
+        android:textSize="30dp"
+        android:maxLines="1"/>
+
+    <EditText
+        android:id="@+id/edit_remark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="备注"
+        android:textStyle="italic"
+        android:maxLines="1"
+        android:textSize="30dp"/>
+
+
+
+
+</LinearLayout>
